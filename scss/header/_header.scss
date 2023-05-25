@@ -1,0 +1,31 @@
+.header {}
+
+.nav {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__logo {
+        @include font-style(36px, $ff-SeogoeUIBold, $color-blue);
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        column-gap: 40px;
+        &--link {
+            @include font-style(16px, $ff-SeogoeUIBold, $color-black);
+        }
+    }
+}
+
+.active {
+    color: $color-white;
+    background-color: $color-blue;
+    border-radius: 8px;
+    width: 170px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

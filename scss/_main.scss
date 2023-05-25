@@ -1,0 +1,27 @@
+@import 'variables',
+'mixins',
+'fonts';
+
+
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+
+    //border: 1px solid red;
+}
+
+
+
+
+@import './header/header';
+@import './banner/banner';
+@import './trusted/trusted';
+@import './communicate/communicate';
+@import './socielity/socielity';
+@import './customer/customer';
+@import './video/video';
+@import './questions/questions';
+@import './award/award';
+@import './subscribe/subscribe';
+@import './footer/footer';

@@ -1,0 +1,43 @@
+
+#questions{
+    min-height: 675px;
+    width: 100%;
+}
+
+.questions-wrapper{
+    display: flex;
+    justify-content: center;
+   
+    flex-direction: column;
+}
+
+.questions__title{
+    @include font-style(26px, $ff-SeogoeUIBold, $color-black);
+    line-height: 28px;
+    text-align: center;
+    margin-bottom: 24px;
+}   
+
+.questions__text{
+    @include font-style(16px, $ff-SeogoeUIRegular, $color-black);
+    line-height: 24px;
+    max-width: 888px;
+    text-align: center;
+    margin-bottom: 52px;
+    align-self: center;
+}
+.questions__selects{
+        
+    form{
+        display: flex;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+    select{
+        width: 570px;
+        padding: 23px 27px;
+        border: 1px solid #CACACA;
+        border-radius: 10px;
+        box-shadow: 0 0 12 silver;
+    }
+}  

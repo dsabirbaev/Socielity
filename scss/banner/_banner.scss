@@ -1,0 +1,56 @@
+#banner {
+    min-height: 771px;
+    width: 100%;
+    background-image: url(../icons/bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 158px;
+
+
+}
+
+.banner-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 126px 0;
+}
+
+.banner {
+    &__title {
+        @include font-style(56px, $ff-SeogoeUIBold, $color-black);
+        line-height: 78px;
+        text-align: center;
+        max-width: 1000px;
+
+        span {
+            color: $color-blue;
+        }
+    }
+
+    &__text {
+        @include font-style(16px, $ff-SeogoeUIRegular, $color-black);
+        max-width: 820px;
+        text-align: center;
+        line-height: 24px;
+        margin: 38px 0;
+    }
+
+    &__btn{
+        @include font-style(16px, $ff-SeogoeUIRegular, $color-white);
+        background-color: $color-blue;
+        border-radius: 8px;
+        padding: 13px 34px;
+        margin-bottom: 21px;
+    }
+
+    &__link{
+        @include font-style(14px, $ff-SeogoeUIRegular, $color-black);
+        img{
+            position: relative;
+            top: -2px;
+            right: 8px;
+        }
+    }
+}

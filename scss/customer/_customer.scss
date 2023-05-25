@@ -1,0 +1,84 @@
+#customer {
+    min-height: 520px;
+    width: 100%;
+}
+
+.customer__cards {
+    display: flex;
+}
+
+.customer__card {
+    display: flex;
+    column-gap: 110px;
+    position: relative;
+    &--left {
+        position: relative;
+    }
+
+    &--message {
+        position: absolute;
+        top: 40px;
+        right: 23px;
+    }
+
+    &--right {
+        
+    }
+    &--name{
+        margin-top: 40px;
+        @include font-style(16px, $ff-SeogoeUIBold, $color-black);
+    }
+    &--job{
+        @include font-style(14px, $ff-SeogoeUIRegular, $color-black);
+        margin-top: 4px;
+        margin-bottom: 20px;
+    }
+    &--text{
+        @include font-style(20px, $ff-SeogoeUIBold, $color-black);
+        line-height: 28px;
+        max-width: 547px;
+    }
+}
+
+// settings for slides
+
+.customer__cards .slick-slide {
+    margin: 0 0px;
+    position: relative;
+    display: flex;
+}
+
+.customer__cards .slick-track {
+    //margin: 0px 0;
+    position: relative;
+}
+
+/* arrows */
+.customer__cards  .slick-arrow{
+	position: absolute;
+	bottom: 30%;
+	//margin: -30px 0px 0px 0px;
+	z-index: 10;
+	font-size: 0;
+	width: 70px;
+	height: 40px;
+}
+.customer__cards  .slick-arrow.slick-prev{
+	left: 51%;
+	background-image: url('../icons/left.svg');
+	background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    background-color: $color-blue;
+    border-radius: 4px;
+}
+.customer__cards .slick-arrow.slick-next{
+	right: 35%;
+    background-image: url('../icons/right.svg');
+	background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    background-color: $color-blue;
+    border-radius: 4px;
+}
+

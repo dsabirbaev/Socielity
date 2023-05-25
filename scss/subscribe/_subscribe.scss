@@ -1,0 +1,43 @@
+
+#subscribe{
+    min-height: 325px;
+    width: 100%;
+}
+
+.subscribe__title{
+    @include font-style(26px, $ff-SeogoeUIBold, $color-black);
+    line-height: 48px;
+    margin-bottom: 24px;
+}
+.subscribe__text{
+    @include font-style(16px, $ff-SeogoeUIRegular, $color-black);
+    line-height: 24px;
+    max-width: 770px;
+    text-align: center;
+    margin-bottom: 33px;
+}
+.subscribe-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    form{
+        width: 100%;
+        display: flex;
+        max-width: 770px;
+        padding: 15px 19px;
+        background-color: #E6E6E6;
+        input{
+            width: 100%;
+            @include font-style(20px, $ff-SeogoeUIRegular, $color-black);
+            background-color: #E6E6E6;
+        }
+        button{
+            @include font-style(16px, $ff-SeogoeUIBold, $color-white);
+            background-color: $color-blue;
+            padding: 11px;
+            width: 170px;
+            border-radius: 8px;
+        }
+    }
+}

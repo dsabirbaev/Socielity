@@ -1,0 +1,54 @@
+
+#communicate{
+    min-height: 1720px;
+    width: 100%;
+}
+
+.communicate-wrapper{
+    display: flex;
+    flex-direction: column;
+    row-gap: 120px;
+    padding-top: 114px;
+}
+
+
+
+.communicate__card{
+    display: flex;
+    column-gap: 90px;
+    &--img{
+        flex-basis: 40%;
+       
+    }
+    &--content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-basis: 50%;
+    }
+    &--title{
+        @include font-style(26px, $ff-SeogoeUIBold, $color-black);
+        line-height: 48px;
+    }
+    &--text{
+        @include font-style(16px, $ff-SeogoeUIRegular, $color-black);
+        line-height: 24px;
+        max-width: 527px;
+        margin-top: 24px;
+        margin-bottom: 43px;
+    }
+    &--btn{
+        width: fit-content;
+        @include font-style(16px, $ff-SeogoeUIBold, $color-white);
+        border-radius: 8px;
+        padding: 13px 34px;
+        background-color: $color-blue;
+    }
+}
+
+.right{
+    order: 2;
+}
+.last{
+    max-width: 457px;
+}

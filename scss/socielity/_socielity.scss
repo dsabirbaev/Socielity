@@ -1,0 +1,57 @@
+
+#socielity{
+    min-height: 832px;
+    width: 100%;
+}
+
+.socielity-wrapper{
+    display: flex;
+    flex-direction: column;
+    row-gap: 51px;
+}
+.socielity__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 24px;
+    &--title{
+        @include font-style(26px, $ff-SeogoeUIBold, $color-black);
+        text-align: center;
+    }
+    &--text{
+        @include font-style(16px, $ff-SeogoeUIRegular, $color-black);
+        line-height: 24px;
+        max-width: 743px;
+        text-align: center;
+    }
+}
+.socielity__cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.socielity__card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #F6F7FD;
+    max-width: 270px;
+    min-height: 267px;
+    border-radius: 8px;
+    padding-left: 11px;
+    padding-right: 13px;
+    &--name{
+        @include font-style(20px, $ff-SeogoeUIBold, $color-black);
+        margin: 12px 0;
+    }
+    &--text{
+        @include font-style(16px, $ff-SeogoeUIRegular, $color-black);
+        line-height: 24px;
+        text-align: center;
+    }
+
+    &:hover{
+        box-shadow:  0 0 10px silver;
+    }
+}

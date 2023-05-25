@@ -1,0 +1,45 @@
+
+#footer{
+    background-color: $color-blue;
+    min-height: 336px;
+    width: 100%;
+
+}
+
+.footer-wrapper{
+    padding-top: 28px;
+    display: flex;
+    gap: 125px;
+    li{
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        margin-bottom: 8px;
+        img{
+            margin-right: 18px;
+        }
+    }
+}
+.footer__title{
+    @include font-style(26px, $ff-SeogoeUIBold, $color-white);
+    line-height: 48px;
+}
+.footer__text{
+    @include font-style(16px, $ff-SeogoeUIRegular, $color-white);
+    line-height: 24px;
+    max-width: 278px;
+}
+.footer__socials{
+    margin-top: 30px;
+    display: flex;
+    column-gap: 18px;
+    cursor: pointer;
+
+    img{
+        filter: brightness(0.85);
+        transition: all 0.5s ease;
+        &:hover{
+            filter: brightness(2);
+        }
+    }
+}

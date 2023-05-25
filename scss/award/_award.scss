@@ -1,0 +1,101 @@
+
+
+#award{
+    //border: 1px solid blue;
+    min-height: 576px;
+    width: 100%;
+}
+
+.award-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.award__title{
+    @include font-style(26px, $ff-SeogoeUIBold, $color-black);
+    line-height: 48px;
+    text-align: center;
+    margin-bottom: 24px;
+}   
+
+.award__text{
+    @include font-style(16px, $ff-SeogoeUIRegular, $color-black);
+    line-height: 24px;
+    max-width: 857px;
+    text-align: center;
+    margin-bottom: 42px;
+}
+
+.award-slider{
+    display: flex;
+ 
+}
+
+.award-slider__card{
+    width: 120px;
+    height: 239px;
+    background: #FFFFFF;
+    border-radius: 16px;
+    box-shadow: 0 0 12 silver;
+    padding: 15px;
+    
+    img{
+        border-radius: 16px;
+        width: 149px;
+        height: 105px;
+        margin: 0 auto;
+    }
+    &--title{
+        @include font-style(20px, $ff-SeogoeUIBold, $color-blue);
+        text-align: center;
+    }
+    &--text{
+        @include font-style(14px, $ff-SeogoeUIRegular, $color-black);
+        text-align: center;
+        line-height: 18px;
+    }
+}
+
+
+// settings for slides
+
+.award-slider .slick-slide {
+    margin: 0 0px;
+    position: relative;
+}
+
+.award-slider .slick-track {
+    //margin: 0px 0;
+    position: relative;
+}
+
+
+// Dots 
+.award-slider .slick-dots {
+    @include flex(row, center, center);
+    position: absolute;
+    top: 120%;
+    left: 0;
+    right: 0;
+}
+
+.award-slider .slick-dots li {
+    list-style: none;
+    margin: 0px 10px;
+}
+
+.award-slider .slick-dots button {
+    font-size: 0;
+    width: 16px;
+    height: 16px;
+    background-color: #E6E6E6;
+    border-radius: 50%;
+}
+
+.award-slider .slick-dots li.slick-active button {
+    background-color: $color-blue;
+    width: 20px;
+    height: 20px;
+}

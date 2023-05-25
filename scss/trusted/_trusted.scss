@@ -1,0 +1,80 @@
+#trusted {
+    min-height: 265px;
+    width: 100%;
+}
+
+
+.trusted {
+
+    &__title {
+        @include font-style(26px, $ff-SeogoeUIBold, $color-black);
+        text-align: center;
+    }
+
+    &__text {
+        @include font-style(16px, $ff-SeogoeUIRegular, $color-black);
+        line-height: 24px;
+        max-width: 875px;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 46px;
+    }
+}
+
+.trusted-slider {
+    display: flex;
+    justify-content: space-between;
+
+    img {
+        width: 200px;
+        filter: grayscale(1);
+        transition: all 0.3s ease;
+
+        &:hover{
+            filter: grayscale(0);
+        }
+    }
+}
+
+
+// settings for slides
+
+.trusted-slider .slick-slide {
+    margin: 0 0px;
+    position: relative;
+}
+
+.trusted-slider .slick-track {
+    //margin: 0px 0;
+    position: relative;
+}
+
+
+// Dots 
+.trusted-slider .slick-dots {
+    @include flex(row, center, center);
+    position: absolute;
+    top: 120%;
+    left: 0;
+    right: 0;
+}
+
+.trusted-slider .slick-dots li {
+    list-style: none;
+    margin: 0px 10px;
+}
+
+.trusted-slider .slick-dots button {
+    font-size: 0;
+    width: 16px;
+    height: 16px;
+    background-color: #E6E6E6;
+    border-radius: 50%;
+}
+
+.trusted-slider .slick-dots li.slick-active button {
+    background-color: $color-blue;
+    width: 20px;
+    height: 20px;
+}
